@@ -3,5 +3,6 @@
         org.clojure/core.async {:mvn/version "1.5.648"}
         babashka/process {:mvn/version "0.1.7"}
         com.taoensso/timbre {:mvn/version "5.2.1"}}
+ :bbin/bin {watch {:main-opts ["-m" "rads.watch"]}}
  :tasks {watch {:requires ([rads.watch])
                 :task (exec 'rads.watch/-main)}}}
